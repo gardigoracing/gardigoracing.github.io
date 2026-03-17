@@ -2782,8 +2782,8 @@ input, select, textarea {
 
 		/* Logo image */
 		#header .logo img {
-		  width: 18vw;
-		  max-width: 500px;
+		  width: 28vw;
+		  max-width: 600px;
 		  min-width: 200px;
 		  transform: translateX(-8px);
 		}
