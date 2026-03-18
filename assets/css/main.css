@@ -2786,7 +2786,7 @@ input, select, textarea {
 		  width: 28vw;
 		  max-width: 600px;
 		  min-width: 200px;
-		  transform: translateX(-8px);
+		  /*transform: translateX(-8px);*/
 		}
 
 		#header h1 {
