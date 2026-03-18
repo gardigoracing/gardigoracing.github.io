@@ -48,21 +48,21 @@
 
 				<div class="box alt container">
 					<section class="feature left">
-						<a href="#contact" class="image icon solid fa-medal"><img src="images/racecourse.jpg" alt="" /></a>
+						<a href="#contact" onclick="gtag('event', 'service_interest', {service: 'first_track_day'});" class="image icon solid fa-medal"><img src="images/racecourse.jpg" alt="" /></a>
 						<div class="content">
 							<h3>First Track Day</h3>
 							<p>Guidance to help you prepare, stay safe, and feel confident on your first days on track.</p>
 						</div>
 					</section>
 					<section class="feature right">
-						<a href="#contact" class="image icon solid fa-flag-checkered"><img src="images/pic02.jpg" alt="" /></a>
+						<a href="#contact" onclick="gtag('event', 'service_interest', {service: 'sim_to_track'});"class="image icon solid fa-flag-checkered"><img src="images/pic02.jpg" alt="" /></a>
 						<div class="content">
 							<h3>Sim to Track</h3>
 							<p>Turn your sim experience into real-world driving with the right attitude and preparation.</p>
 						</div>
 					</section>
 					<section class="feature left">
-						<a href="#contact" class="image icon solid fa-chart-line"><img src="images/profile_pic.png" alt="" /></a>
+						<a href="#contact" onclick="gtag('event', 'service_interest', {service: 'driver_improvement'});" class="image icon solid fa-chart-line"><img src="images/profile_pic.png" alt="" /></a>
 						<div class="content">
 							<h3>Driver Improvement</h3>
 							<p>Dive into video and telemetry to understand your driving and focus on what to improve next.</p>
@@ -217,7 +217,7 @@
 					<h3>Ready to Get on Track?</h3>
 					<p>Whether you're preparing for your first track day, setting up your sim, or looking to improve your driving, get in touch and we’ll figure out the next step together.</p>
 					<ul class="actions special">
-						<li><a href="mailto:gardigoracing@gmail.com" class="button">SEND ME A MESSAGE</a></li>
+						<li><a href="mailto:gardigoracing@gmail.com" class="button" onclick="gtag('event', 'contact_click', {location: 'main_cta',method: 'email'});">SEND ME A MESSAGE</a></li>
 					</ul>
 				</footer>
 
@@ -234,9 +234,9 @@
 					<p>Follow along, see what I’m working on, or reach out directly.</p>
 
 					<ul class="icons">
-						<li><a href="https://www.youtube.com/@GardigoRacing" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
-						<li><a href="mailto:gardigoracing@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						<li><a href="https://www.instagram.com/gardigo/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.youtube.com/@GardigoRacing" class="icon brands fa-youtube" onclick="gtag('event', 'social_click', {platform: 'youtube'});"><span class="label">Youtube</span></a></li>
+						<li><a href="https://www.instagram.com/gardigo/" class="icon brands fa-instagram" onclick="gtag('event', 'social_click', {platform: 'instagram'});"><span class="label">Instagram</span></a></li>
+						<li><a href="mailto:gardigoracing@gmail.com" class="icon solid fa-envelope" onclick="gtag('event', 'social_click', {platform: 'email_footer'});"><span class="label">Email</span></a></li>
 						<!--<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
 						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>-->
 					</ul>
