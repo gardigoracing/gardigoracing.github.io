@@ -217,7 +217,19 @@
 					<h3>Ready to Get on Track?</h3>
 					<p>Whether you're preparing for your first track day, setting up your sim, or looking to improve your driving, get in touch and we’ll figure out the next step together.</p>
 					<ul class="actions special">
-						<li><a href="mailto:gardigoracing@gmail.com" class="button" onclick="gtag('event', 'contact_click', {location: 'main_cta',method: 'email'});">SEND ME A MESSAGE</a></li>
+						<li>
+						  <a href="mailto:gardigoracing@gmail.com"
+						     class="button"
+						     onclick="gtag('event', 'contact_click', {
+						       location: 'main_cta',
+						       method: 'email',
+						       event_callback: function() {
+						         window.location.href='mailto:gardigoracing@gmail.com';
+						       }
+						     }); return false;">
+						    SEND ME A MESSAGE
+						  </a>
+						</li>
 					</ul>
 				</footer>
 
