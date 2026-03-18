@@ -17,7 +17,6 @@
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
-
 		gtag('config', 'G-KKHY39W39H');
 	</script>
 </head>
@@ -137,8 +136,8 @@
 	<!-- Custom tracking -->
 	<script>
 		function trackEvent(name, params) {
-			console.log('Tracking:', name, params);
-			gtag('event', name, params);
+			console.log('Tracking:', name, params || {});
+			gtag('event', name, params || {});
 		}
 
 		function trackMailtoClick(eventName, params, email) {
@@ -155,15 +154,15 @@
 		}
 
 		document.getElementById('service-first-track-day')?.addEventListener('click', function () {
-			trackEvent('service_interest', { service: 'first_track_day' });
+			trackEvent('first_track_day_click');
 		});
 
 		document.getElementById('service-sim-to-track')?.addEventListener('click', function () {
-			trackEvent('service_interest', { service: 'sim_to_track' });
+			trackEvent('sim_to_track_click');
 		});
 
 		document.getElementById('service-driver-improvement')?.addEventListener('click', function () {
-			trackEvent('service_interest', { service: 'driver_improvement' });
+			trackEvent('driver_improvement_click');
 		});
 
 		document.getElementById('cta-email')?.addEventListener('click', function (e) {
